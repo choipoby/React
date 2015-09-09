@@ -1,0 +1,32 @@
+<head>
+  <script src="https://fb.me/react-0.13.3.js"></script>
+  <script src="https://fb.me/JSXTransformer-0.13.3.js"></script>
+</head>
+<body>
+</body>
+
+<script type="text/jsx">
+  //
+  // 1. Define a 'class'
+  //
+  // one requirment : implement render function
+  var HelloWorld = React.createClass({
+    render: function() {
+        return  <div>
+                Hello World!
+                </div> 
+    }
+  });
+  
+  //
+  // 2. React, please render this class
+  //
+  // element is instance of HelloWorld class
+  var element = React.createElement(HelloWorld);
+
+  //
+  // 3. React, after you render this class, please place it in my body tag
+  //
+  // render(instance, whereToRender)
+  React.render(element, document.body);
+</script>

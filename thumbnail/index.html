@@ -1,0 +1,64 @@
+<head>
+  <script src="https://fb.me/react-0.13.3.js"></script>
+  <script src="https://fb.me/JSXTransformer-0.13.3.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-5 target">
+      </div>
+    </div>
+  </div>
+</body>
+
+<script type="text/jsx">
+  //
+  // 1. Define a 'class'
+  //
+  // one requirment : implement render function
+  var Badge = React.createClass({
+    render: function() {
+        // whenever react sees '{', '}', it will try to figure our options
+        return  <button className="btn btn-primary" type="button">
+                {this.props.title} <span className="badge">{this.props.number}</span>
+                </button>
+    }
+  });
+
+  var Thumbnail = React.createClass({
+    render: function() {
+      return <div className="thumbnail">
+        <img src={this.props.imageUrl} align="left" />
+        <div className="caption">
+          <h3>{this.props.header}</h3>
+          <p>{this.props.description}</p>
+          <p>
+            <a href="#" className="btn btn-primary" role="button">Button</a>
+            <a href="#" className="btn btn-default" role="button">Button</a>
+          </p>
+        </div>
+      </div>
+    }
+  });
+
+  var options = {
+    title:'Inbox',
+    number:32,
+    header: 'Learn subject',
+    description: 'this is to learn subject. this is description for this course',
+    imageUrl: 'http://formatjs.io/img/react.svg'
+  };
+
+  //
+  // 2. React, please render this class
+  //
+  // element is instance of Badge class
+  var element = React.createElement(Thumbnail, options);
+
+  //
+  // 3. React, after you render this class, please place it in my body tag
+  //
+  // render(instance, whereToRender)
+  React.render(element, document.querySelector('.target'));
+</script>
