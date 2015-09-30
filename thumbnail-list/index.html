@@ -43,26 +43,30 @@
     }
   });
 
-  var ThumnailList = React.createClass({
+  var ThumbnailList = React.createClass({
     render: function() {
-
-
+      var list = this.props.thumbnailData.map(function(thumbnailProps){
+        return <Thumbnail {...thumbnailProps}/>
+      });
+      return <div>
+        {list}
+      </div>
     }
   });
 
   var options = {
-    thumbnailData = [{
+    thumbnailData : [{
       title:'Inbox',
       number:32,
       header: 'Learn Violin',
       description: 'this is to learn subject. this is description for this course',
-      imageUrl: 'http://formatjs.io/img/react.svg'
+      imageUrl: 'https://i.embed.ly/1/display?key=fc778e44915911e088ae4040f9f86dcd&url=https%3A%2F%2Fmedia.licdn.com%2Fmpr%2Fmpr%2Fp%2F5%2F005%2F093%2F18c%2F266dd5e.jpg'
     }, {
       title:'Inbox',
       number:25,
       header: 'Learn Golf',
       description: 'You can be a tiger woods!',
-      imageUrl: 'http://formatjs.io/img/react.svg'
+      imageUrl: 'https://www.palacasino.com/wp-content/uploads/2009/11/GolfImage.jpg'
     }]
 };
 
@@ -70,7 +74,7 @@
   // 2. React, please render this class
   //
   // element is instance of Badge class
-  var element = React.createElement(Thumbnail, options);
+  var element = React.createElement(ThumbnailList, options);
 
   //
   // 3. React, after you render this class, please place it in my body tag
