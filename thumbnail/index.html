@@ -4,6 +4,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 </head>
 <body>
+  <!-- React expect some classes to be in specific html -->
   <div class="container">
     <div class="row">
       <div class="col-sm-5 target">
@@ -27,6 +28,7 @@
   });
 
   var Thumbnail = React.createClass({
+    // 모든 다이나믹한 필드는 { }로 감싸 보낸다.
     render: function() {
       return <div className="thumbnail">
         <img src={this.props.imageUrl} align="left" />
@@ -34,8 +36,7 @@
           <h3>{this.props.header}</h3>
           <p>{this.props.description}</p>
           <p>
-            <a href="#" className="btn btn-primary" role="button">Button</a>
-            <a href="#" className="btn btn-default" role="button">Button</a>
+            <Badge title={this.props.title} number={this.props.number}/>
           </p>
         </div>
       </div>
