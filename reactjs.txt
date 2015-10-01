@@ -1,18 +1,18 @@
-Code base break
+################################################################################
+## Code base break ##
   split jsx files
   consolidate into one js file
   include that js to html
 
-gulp :
-to compile jsx to javascript concatenated
-build tool for jsx
-걸프는 사실 리엑트에 대해서 모른다. gulpfile.js로 걸프한테 뭘 할지 알려줘야 한다.
-
-  npm init
-  npm install --save gulp gulp-react gulp-concat
-  npm install -g gulp-cli
-  gulp -v
-
+################################################################################
+## gulp ##
+  to compile jsx to javascript concatenated
+  build tool for jsx
+  걸프는 사실 리엑트에 대해서 모른다. gulpfile.js로 걸프한테 뭘 할지 알려줘야 한다.
+    npm init
+    npm install --save gulp gulp-react gulp-concat
+    npm install -g gulp-cli
+    gulp -v
 
 gulp가 jsx파일 concat하는 순서에 dependency를 주기위해서 다음 npm을 깔아야 한다.
 - 안그러면 jsx를 임의의 순서로 컴파일해서 이상한 결과가 나온다.
@@ -21,3 +21,39 @@ npm install --save browserify reactify vinyl-source-stream watchify gulp-util
 
 // instead of specifying <script src = ....>
 npm install --save react
+
+다른 모듈이 사용하게 할려면,
+module.exports
+
+################################################################################
+## state
+스테이트 - property of every react component that used to record the interactions with user
+유저 액션이 있은 다음에 다시 re-rendering이 될텐데, 이때 유저가 어떤 상태인지 모르면 이상하게 렌더가 될것이다.
+keep track of user interaction between re-rendering
+
+user state between re-renders
+
+
+drop down example
+render: function() {
+  var visible;
+
+  if(this.state.dropDownOpen){
+    visible = "visible";
+  }else{
+    visible = "hidden";
+  }
+
+  return <div>
+    <button>Open/Close Dropdown</button>
+    <ul className={visible}>
+      <li> Option #1 </li>
+      <li> Option #2 </li>
+    </ul>
+  </div>
+}
+
+#
+rule of thumb
+this.state - user input
+this.props - data to show
