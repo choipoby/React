@@ -29,6 +29,13 @@ module.exports = React.createClass({
   handleClick: function() {
     console.log(this.state.text);
     // send value of the text input to firebase
+    // push makes new object in remote database
+    this.props.itemStore.push({
+      // scheme
+      text: this.state.text,
+      done: false
+    });
+    this.setState({text:''});
   },
   handleInputChange: function(event) {
     // DOM reference. In this case, input
