@@ -1,0 +1,555 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<head>
+	<meta charset="utf-8"/>
+    
+    <meta name="viewport" content="width=1200">
+    <meta property="og:title" content="Verlocal - Rediscover yourself and your city with our local experts" >
+    <meta property="og:image" content="https://d3ce7jb7ih53ua.cloudfront.net/verloca_new_design/how_to_host/Image-when-Shared.png" >
+    <meta property="og:description" content= "A social marketplace where people with talent meet people with curiosity!"/>
+    <link rel="stylesheet" href="/assets/css/navbar.css"/> 
+    <link rel="stylesheet" href="/assets/css/buttons.css"/> 
+    <link rel="stylesheet" href="/assets/css/lending_page.css"/> 
+    <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://d3ce7jb7ih53ua.cloudfront.net/verloca_new_design/profile/flags32_p.css"
+/>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>Verlocal - Rediscover yourself and your city with our local experts</title>
+    <link rel="shortcut icon" href="https://s3-us-west-2.amazonaws.com/verlocal/verloca_new_design/nav/32_32.ico" type="image/x-icon">
+    <link rel="icon" href="https://s3-us-west-2.amazonaws.com/verlocal/verloca_new_design/nav/32_32.ico" type="image/x-icon">
+    <meta name = "author" content="verlocal">
+    <meta property="fb:admins" content="100000759090881" />
+    <meta property="og:site_name" content="verlocal" />
+    <meta property="fb:app_id" content="1394165054194174" />
+     <meta name="description" content="A social marketplace where people with talent meet people with curiosity!" />
+    <meta name="keywords" content="verlocal,sushi classes, san francisco,diego marcial rios,sushi making class, san francisco,pottery class,pottery workshop, diy workshop,san francisco best hidden gems,make paper mache mask,succulent terrarium,things to do, local experience, workshop,class, learning experience, tour, activity, experiences, discover,locals"/>
+    <meta name="google-site-verification" content="_wJr2f2JKICp72ngHNSv2rbPXW88wQvrSi2olJM8vdc" />
+
+</head>
+
+<body>
+    <h1 style="display:none">Verlocal - Rediscover yourself and your city with our local experts</h1>
+    <h2 style="display:none">A social marketplace where people with talent meet people with curiosity!</h2>
+    <iframe id="google_goals" src="" width="100%" height="300" style="display:none">
+</iframe>
+<div id="fb-root"></div>
+<div id='login-modal-bg' style="display:none"></div>
+<div id='modal-bg' style="display:none"></div>
+<div id ='signup_modal'>
+    <div id="signup_modal_body">
+        <!--div class="signup-msg-msg" style="margin-top:0px;font-size:14px;margin-bottom:10px;color:#888888;width:100%;text-align:center;">
+        For exclusive access to the best experiences,
+        </div-->
+
+        <div style="width:100%;text-align:center;font-size:20px;font-weight:700;color:#515151;"> SIGN UP </div>
+        <div class="signup-msg-msg" style="margin-top:10px;font-size:14px;margin-bottom:20px;color:#888888;width:100%;text-align:center;">and get <span style="color:#fc6472;">10% OFF</span> your first experience!</div>
+        <a class="" onclick="fb_login()">  
+            <div class="fa fa-facebook facebook_logo"></div>
+            <button id="signup-btn" class="btn" style="background: #3b5998;color:white;">
+                Sign up with Facebook
+            </button>
+        </a>
+        <br>
+        
+        <center>
+        <div id="login_modal_or_span">- OR -</div>
+        </center>
+        <input type="text" tabindex=1 id = "first_name_login" style="border-radius:3px;height:30px;" placeholder="First Name">
+        <input type="text" tabindex=2 id= "last_name_login" placeholder="Last Name" style="height:30px;border-radius:3px;">
+        <input type="text" tabindex=3 id= "email_login" placeholder="Email" style="border-radius:3px;height:30px;">
+        <input type="password" tabindex=4 id = "password_login" placeholder="Password" style="border-radius:3px;height:30px;">
+        <input type="password" tabindex=5 id = "confirm_login" placeholder="Confirm Password" style="border-radius:3px;height:30px;">
+        <div id="err-msg">
+        </div>
+        <div id="signup-desc">
+            By clicking "sign up", you confirm that you accept our <a href="/pages/terms" style="color:#fc6472">terms of service</a>.
+        </div>
+        <br>
+        <button class="btn signup-btn-no-fb" tabindex=6 style="border-radius:3px;background-color: #fc6472;color:white;font-size:12px">Sign up</button>
+        <hr style="margin-top:15px;border:solid #e1e1e1;border-width: 1px 0 0;">
+        <div style="font-size:14px;color:#888888;margin-top:10px;text-align:left;font-weight:500;">
+            Already have a Verlocal account? <span class="popup-login">Log in</span>
+        </div>
+    </div>
+</div>
+<div id='login_modal'>
+    <div id="login_modal_body">
+        <div style="width:100%;text-align:center;font-size:21px;font-weight:700;color:#515151;"> LOG IN </div>
+        <br>
+        <a class="" onclick="fb_login()">
+            <div class="fa fa-facebook facebook_logo"></div>
+            <button id="signup-btn" class="btn" style="background: #3b5998;color:white;">Login with Facebook</button>
+        </a>
+        <br>
+        <center>
+        <div id="login_modal_or_span">- OR -</div>
+        </center>
+        <input type="text" tabindex=3 id= "email_login_login" placeholder="Email" style="border-radius:3px;height:30px;">
+        <input type="password" tabindex=4 id = "password_login_login" placeholder="Password" style="border-radius:3px;height:30px;">
+        <div id="err-msg-login">
+        </div>
+        <div id="forgot_password" style="margin-top:5px;"><a href="/forgot_password">Forgot your password?</a></div>
+        <button class="btn signup-btn-no-fb" style="font-size:12px;background-color: #fc6472;color: white;border-radius:3px;" id ="login-btn-no-fb" tabindex=6>Log in</button>
+        <hr style="margin-top:15px;border:solid #e1e1e1;border-width: 1px 0 0;">
+        <div id="want-to-join" style="color:#666666;font-weight:300;">Want to join? <span style="color:#fc6472">Sign up</span></div>
+    </div>
+</div>
+<!--div id = "top-message-bar">
+    <center>
+        <div class="inline" style="overflow-y:hidden;">2% of all proceeds fund child education programs in your local community. $2,342.50 raised so far!</div>
+        <div class="inline social-box-header" style="overflow-y:hidden;">
+            <a href="https://www.facebook.com/verlocal">
+            <img src="https://s3-us-west-2.amazonaws.com/verlocal/verloca_new_design/main_page/facebook.png" id="social-header-icon" class="inline" width="23">
+            </a>
+            <a href="https://twitter.com/Verlocal">
+            <img src="https://s3-us-west-2.amazonaws.com/verlocal/verloca_new_design/main_page/twitter.png" id="social-header-twitter" class="inline" width="23">
+            </a>
+            <a href="http://www.pinterest.com/verlocal">
+            <img src="https://s3-us-west-2.amazonaws.com/verlocal/verloca_new_design/main_page/pinterest.png" id="social-header-pinterest" class="inline" width="23">
+            </a>
+            <a href="http://instagram.com/verlocal">
+            <img src="https://s3-us-west-2.amazonaws.com/verlocal/verloca_new_design/main_page/instagram.png" id="social-header-instagram" class="inline" width="23">
+            </a>
+        </div>
+
+        </center>
+</div-->
+<div id="navbar">
+    <a href="/search">
+        <img src="https://s3-us-west-2.amazonaws.com/verlocal/verloca_new_design/lending_page/logo_white_1.svg" id="logo" width="170px">
+    </a>
+    <div id="search-container">
+        <div id="magnify" class ="fa fa-search"></div>
+        <input id="search-box" type="text" value="" name="search_text" placeholder="Search" maxlength="150" class="inline"/>
+        <div id="search-result-box"></div>
+    </div>
+
+    <div class = "nav_logged_out_menu">
+        <a href="/search">
+            <span class="login_signup" id="marketing_tools">
+                SEARCH
+            </span>
+        </a>
+        <a class="login_signup" href="/forum" target="_blank">FORUM</a>
+        <span class="login_signup" id="signup">SIGN UP</span>
+        <span class="login_signup" id="login">LOG IN</span>
+        <a class="login_signup" href="http://blog.verlocal.com/" target="_blank">BLOG</a>
+        <a class="login_signup" href="/howto">HOW TO</a>
+        <span class="login_signup" id="my_listings_btn">BE A HOST</span>
+    </div>
+
+    <div class = "nav_logged_in_menu">
+        
+        <div class="nav_logged_in">
+                <div id="message-dropdown">
+                    <div id="spin_11"></div>
+                    <div id="message-list-frame"></div>
+                    <a href="/pages/messages">
+                        <div id="see-all-requests">
+                        See All Messages
+                        </div>
+                    </a>
+            </div>
+
+            <div class="click_dropdown inline">
+                <li class="inline">
+                    <a href="/">
+                    <img class="profile_thumb_login" width="25" height="25" src="https://instquest.s3.amazonaws.com/anon-profile.png">
+                    </a>
+                    </li>
+                <li class="inline"><div class="value_name"></div><b class="caret"></b></li>
+                
+                <div id="profile_dropdown">
+                    <ul>
+                        <a href ="/upgrade">
+                            <li id="settings_button" class="side_menu">
+                                Upgrade<span style="color:#fc6472;margin-left:5px;font-weight:700;">New</span>
+                            </li>
+                        </a>
+                        <a href ="/home">
+                            <li id="settings_button" class="side_menu">
+                                Profile
+                            </li>
+                        </a>
+                        <!--a href ="/pages/messages">
+                            <li id="settings_button" class="side_menu">
+                                Inbox
+                            </li>
+                        </a-->
+                        <a href="/pages/pending_requests">
+                            <li id="settings_button" class="side_menu">
+                                Purchased
+                            </li>
+                        </a>
+                        <a href="/my_listings">
+                            <li id="settings_button" class="side_menu">
+                                My Listings
+                            </li>
+                        </a>
+
+                        <a href="/pages/marketing">
+                            <li id="settings_button" class="side_menu">
+                                Marketing Tools
+                            </li>
+                        </a>
+
+                        <!--a href = "/pages/profile">
+                            <li id="settings_button" class="side_menu">
+                                Edit Profile
+                            </li>
+                        </a-->
+                        <a href = "/pages/payment">
+                            <li id="settings_button" class="side_menu">
+                                Payment
+                            </li>
+                        </a>
+                        <!--a href = "/verification">
+                            <li id="settings_button" class="side_menu">
+                                Verification
+                            </li>
+                        </a-->
+                        <a href = "/account">
+                            <li id="settings_button" class="side_menu">
+                                Account
+                            </li>
+                        </a>
+                        <a href = "/invite">
+                            <li id="settings_button" class="side_menu">
+                                Invite
+                            </li>
+                        </a> 
+                        <a href ="/forum">
+                            <li id="settings_button" class="side_menu">
+                                Forum<span style="color:#fc6472;margin-left:5px;font-weight:700;">New</span>
+                            </li>
+                        </a>
+                        <!--a href ="/casttalent">
+                            <li id="settings_button" class="side_menu" style="">
+                                Cast Talent
+                            </li>
+                        </a-->
+                        <a>
+                            <li id="logout_btn" class="side_menu">
+                                Logout
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="nav_logged_in_right">
+                <div id="friend-request_dropdown">
+                    <div id="spin_10"></div>
+                    <div id="requested_friends-frame">
+                    </div>
+                    <div id="recommended_friends-frame">
+                    </div>
+                    <a href="/requested_friend">
+                    <div id="see-all-requests">
+                        See All Requests
+                    </div>
+                    </a>
+                </div>
+        </div>
+
+        <div class="nav_logged_in_right">
+            <div id="notification-dropdown">
+                <div id="spin_30"></div>
+                <div id="notification-frame">
+                </div>
+                <div id="see-all-requests-n">
+                    See More
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="nav_logged_in_right">
+            <span class="login_signup" id="my_listings_btn">BE A HOST</span>
+            <a href="/forum">
+            <span class="login_signup">
+                FORUM
+            </span>
+            </a>
+            <a href="/search">
+            <span class="login_signup">
+                SEARCH
+            </span>
+            </a>
+            <span class="login_signup" id="noti_logo">NOTIFICATIONS
+                <div id="noti-num" class="circle"></div>
+            </span>
+            <!--span class="login_signup" id="request_logo">Friends
+                <div id="request-num" class="circle"></div>
+            </span-->
+            <span class="login_signup" id="inbox">INBOX
+                <div id="inbox-num" class="circle"></div>
+            </span>
+        </div>
+    </div>
+</div>
+
+
+    <div class="main-banner">
+        <div style="color:white;text-align:center;padding-top:180px;font-size:45px;letter-spacing: 2px;font-weight:700;">
+            DISCOVER & SHARE
+        </div>
+        <div style="color:white;text-align:center;padding-top:15px;font-size:20px;letter-spacing: 1px;">
+            Experience the most amazing local adventures in your city.
+        </div>
+        
+            <a href="/search">
+            <div id="start-now">
+                <span>Get Started</span>
+                <span class="fa fa-chevron-right" style="margin-left:5px;font-size:12px !important;"></span>
+            </div>
+            </a>
+        
+        <video width='100%' height='100%' loop poster="https://d3ce7jb7ih53ua.cloudfront.net/verloca_new_design/main_page/first-page-1.png" id="bgvid" style="min-width:100%;" autoplay>
+                <source src="https://d3ce7jb7ih53ua.cloudfront.net/verloca_new_design/main_page/verlocal+header_3.mp4" type="video/mp4">
+                <source src="https://d3ce7jb7ih53ua.cloudfront.net/verloca_new_design/main_page/verlocal+header_1.webm" type="video/webm">
+            </video>
+    </div>
+    <div class="middle-frame">
+        <div style="text-align:center;color:#6c6e6e;font-size:28px;padding-top:52px;letter-spacing: 1px;font-weight:800;">
+            Every Moment Counts
+        </div>
+        <div style="text-align:center;color:#999999;font-size:16px;padding-top:10px;letter-spacing: 1px;">
+            Pick your city and find new experiences close to you.
+        </div>
+        <div class="city-frame">
+            <a href="/search/sf">
+            <div class="inline city-box city-box-sf">San Francisco</div>
+            </a>
+            <a href="/search/ny">
+            <div class="inline city-box city-box-ny">New York</div>
+            </a>
+            <a href="/search/la">
+            <div class="inline city-box city-box-la">Los Angeles</div>
+            </a>
+            <a href="/search/seattle">
+            <div class="inline city-box city-box-se">Seattle</div>
+            </a>
+            <a href="/search/chicago">
+            <div class="inline city-box city-box-ch">Chicago</div>
+            </a>
+            <a href="/search/philadelphia">
+            <div class="inline city-box city-box-ph">Philadelphia</div>
+            </a>
+            <a href="/search/Washington, D.C">
+            <div class="inline city-box city-box-wa">Washington, D.C</div>
+            </a>
+
+            <a href="/search/dallas">
+            <div class="inline city-box city-box-dallas">Dallas</div>
+            </a>
+            <a href="/search/denver">
+            <div class="inline city-box city-box-denver">Denver</div>
+            </a>
+            <a href="/search/San Diego">
+            <div class="inline city-box city-box-sd">San Diego</div>
+            </a>
+
+        </div>
+    </div>
+
+    <div class="about-frame">
+        <div class="inline about-box">
+            <div>
+                <div class="inline about-box-left left-img-box"></div>
+                <a href="/beahost">
+                <div class="inline about-box-right about-box-right-right" style="cursor:pointer;">
+                    <div class="about-title">Interested?</div>
+                    <div class="about-line"></div>
+                    <div class="about-content">
+                        From ideas to passions, Verlocal turns dreams into reality.
+                    </div>
+                    <div style="margin-top:20px;font-size:12px;color:#fc6472;">
+                        <span>BE A HOST</span>
+                        <span class="fa fa-chevron-right"></span>
+                    </div>
+                </div>
+                </a>
+            </div>
+            <div>
+                <div class="inline about-box-left">
+                    <div class="about-title">About</div>
+                    <div class="about-line"></div>
+                    <div class="about-content" style="text-align:left;line-height:130%;">
+                        Verlocal helps people find new adventures in their cities within just a few clicks. 
+                        Whether it is indoors, outdoors, or at home, Verlocal lists a huge catalog of activities that are just right for you!
+                    </div>
+                </div>
+                <div class="inline about-box-right right-img-box"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="whatsnew">
+        <div style="padding-top:100px;margin:0 auto;text-align:center;color:#6c6e6e;font-size:28px;letter-spacing: 1px;font-weight:800;">
+            What's New
+        </div>
+        <div class="whatsnew-content">
+            
+        </div> 
+    </div>
+    <div class="forum-frame" style="border-top:1px solid #efefef;padding-bottom:70px;background-image:url(https://d3ce7jb7ih53ua.cloudfront.net/verloca_new_design/forum/LandingPage_Background.jpg);background-size:cover;background-postion:center;">
+        <div style="padding-top:60px;margin:0 auto;text-align:center;color:white;font-size:28px;letter-spacing: 1px;font-weight:800;padding-bottom:0px;">Tell Your Stories</div>
+        <div style="text-align:center;color:white;font-size:16px;padding-top:10px;letter-spacing: 1px;">
+            Get involved with your communities!
+        </div>
+        <a href='/forum'>
+        <div style="margin:0 auto; width:200px; height:35px; border:2px solid #ffffff;color:white;text-align:center;line-height:35px;margin-top:25px;font-size:16px;cursor:pointer;" id="go-on-forum">
+            Go on Forum
+        </div>
+        </a>
+        
+    </div>
+    <div class="intro-pass" style="border-top:1px solid #efefef;padding-bottom:70px;">
+
+        <div style="padding-top:60px;margin:0 auto;text-align:center;color:#6c6e6e;font-size:28px;letter-spacing: 1px;font-weight:800;padding-bottom:70px;">Have a Group of People?</div>
+        <div style="text-align:center;font-size:14px;">
+            <div class="inline" style="vertical-align:top;width:250px;">
+                <div style="margin:0 auto;width:80px;height:80px;background-image:url(https://s3-us-west-2.amazonaws.com/verlocal/verloca_new_design/upgrade/TwoPeople.png);background-size:cover;margin-bottom:30px;"></div>
+                <div style="color:#666666;padding-bottom:20px;">More People</div>
+                <div style="text-align:left;color:#999999;width:250px;">Enjoy experiences with more of your friends, family, colleagues!</div>
+            </div>
+            <div class="inline" style="vertical-align:top;width:40px;"></div>
+            <div class="inline" style="vertical-align:top;width:250px;">
+                <div style="margin:0 auto;width:80px;height:80px;background-image:url(https://s3-us-west-2.amazonaws.com/verlocal/verloca_new_design/upgrade/Money.png);background-size:cover;margin-bottom:30px;"></div>
+                <div style="color:#666666;padding-bottom:20px;">Lower Price</div>
+                <div style="text-align:left;color:#999999;width:250px;">It's always good to save more, right? Get up to 50% off per experience!</div>
+            </div>
+             <div class="inline" style="vertical-align:top;width:40px;"></div>
+            <div class="inline" style="vertical-align:top;width:250px;">
+                <div style="margin:0 auto;width:80px;height:80px;background-image:url(https://s3-us-west-2.amazonaws.com/verlocal/verloca_new_design/upgrade/Rocket.png);background-size:cover;margin-bottom:30px;"></div>
+                <div style="color:#666666;padding-bottom:20px;">More Fun</div>
+                <div style="text-align:left;color:#999999;width:250px;">More experiences, lower price, and more fun!</div>
+            </div>
+        </div>
+        <a href="/upgrade_price">
+        <div style="margin:0 auto;cursor:pointer;width:190px;height:35px; border:1px solid #999999;line-height:35px;color:#999999;text-align:center;margin-top:50px;font-size:14px;font-weight:500;" id="find-your-plan">
+
+                <span>Find Your Right Plan</span><span class="fa fa-angle-right" style="margin-left:10px;"></span>
+        </div>
+        </a>
+        
+
+    </div>
+    <div class="join-frame">
+        <div style="text-align:center;font-size:28px;padding-top:150px;color:white;font-weight:800;">
+            Join The Fun!
+        </div>
+        <div style="text-align:center;font-size:20px;padding-top:20px;color:white;">
+Local adventures are always the BEST adventures. We just need you.
+        </div>
+    </div>
+    <div style="width:100%;height:220px;background:#88c5cc;">
+        <div style="width:1000px;margin:0 auto;">
+            <div class="inline footer-top-left">
+                <img src="https://s3-us-west-2.amazonaws.com/verlocal/verloca_new_design/lending_page/logo_white.svg" width="180px;">
+                <div style="color:white;font-weight:300 !important;margin-left:20px;font-size:12px;margin-top:10px;">
+                    A social platform that connects and empowers people through local experiences. 
+                </div>
+            </div>
+            <div class="inline footer-top-left" style="padding-top:50px;">
+                <div style="color:white;font-weight:300 !important;margin-left:20px;font-size:12px;margin-top:10px;">
+                    Phone: (650) 308 - 4582
+                </div>
+                <div style="color:white;font-weight:300 !important;margin-left:20px;font-size:12px;margin-top:10px;">
+                    Email: support@verlocal.com
+                </div>
+            </div>
+            <div class="inline footer-top-right">
+                <div style="color:#6facb3;font-weight:700 !important;margin-left:20px;font-size:14px;margin-top:10px;">
+                    Company
+                </div>
+                <a href="/howto" target="_blank">
+                <div style="color:white;font-weight:300 !important;margin-left:20px;font-size:12px;margin-top:10px;">
+                    <span class="fa fa-chevron-right"></span><span style="margin-left:5px;">How to</span>
+                </div>
+                </a>
+                <a href="http://blog.verlocal.com/" target="_blank">
+                <div style="color:white;font-weight:300 !important;margin-left:20px;font-size:12px;margin-top:10px;">
+                    <span class="fa fa-chevron-right"></span><span style="margin-left:5px;">Blog</span>
+                </div>
+                </a>
+                <a href="/faq" target="_blank">
+                <div style="color:white;font-weight:300 !important;margin-left:20px;font-size:12px;margin-top:10px;">
+                    <span class="fa fa-chevron-right"></span><span style="margin-left:5px;">FAQ</span>
+                </div>
+                </a>
+                <a href="/pages/terms" target="_blank">
+                <div style="color:white;font-weight:300 !important;margin-left:20px;font-size:12px;margin-top:10px;">
+                    <span class="fa fa-chevron-right"></span><span style="margin-left:5px;">Privacy & Terms</span>
+                </div>
+                </a>
+            </div>
+
+        </div>
+
+        
+    </div>
+    <div style="width:100%;height:50px;background: #6facb3;position:fixed;bottom:0px;z-index:9999999 !important;">
+         <div style="min-width:1000px;margin: 0 auto;overflow:hidden;height:50px;">
+            
+            <div style="width:980px;height:50px;margin:0 auto;">
+                <div style="color:white;font-size:12px;font-weight:200;vertical-align:top;line-height:50px;" class="inline">
+                        &copy; InstQuest Inc. All rights reserved
+                </div>
+
+                <div class="inline social-box">
+                    <div style="color:white;font-size:12px;font-weight:200;vertical-align:top;margin-right:20px;" class="inline">
+                        Let's be friends! Join us on
+                    </div>    
+                    <a href="https://www.facebook.com/verlocal" target="_blank" class="fa fa-facebook icon">
+                    </a>
+                    <a class="fa fa-twitter icon" href="https://twitter.com/verlocal" target="_blank">
+                        
+                    </a>
+                    <a class="fa fa-instagram icon" href="http://instagram.com/officialverlocal" target="_blank">
+                    </a>
+                    <a class="fa fa-pinterest icon" href="http://pinterest.com/verlocal" target="_blank">
+                    </a>
+                    <a class="fa fa-linkedin icon" href="https://www.linkedin.com/company/verlocal" target="_blank">
+                    </a>
+                </div>
+            </div>
+         </div>
+    </div>
+    
+
+    <input type="hidden" id ="isLoggedin" value="false">
+    <input type="hidden" id ="email_confirm" value="true">
+    <input type="hidden" id ="my_id" value="">
+    <input type="hidden" id ="email" value="undefined">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="/assets/js/fb_login.js"></script>
+    <script src="/assets/js/jquery.placeholder.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/assets/js/helm_spinner.js"></script>
+    <script async src="/assets/js/resend_confirm_email.js"></script>
+    <script src="/assets/js/basic_func.js"></script>
+    <script src="/assets/js/lending_page.js"></script>
+    
+
+
+    <script async src="/assets/js/modal-alert.js"></script>
+    <script async src="/assets/js/subscribe_modal.js"></script>
+      <script async src="https://d3ce7jb7ih53ua.cloudfront.net/assets/js/moment.js" type="text/javascript"></script>
+
+
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-49813043-1', 'verlocal.com');
+    ga('require', 'displayfeatures');
+    ga('send', 'pageview');
+    </script>
+
+</body>
+
+</html>

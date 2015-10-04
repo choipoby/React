@@ -18,9 +18,10 @@ var App = React.createClass({
   componentWillMount: function() {
     // bindAsObject - reactfire method (available via mixins)
     // mixins of ReactFire copies ReacFire methods to this component
-    this.bindAsObject(new Firebase(rootUrl + 'items/'), 'items');
-    // after this, anything found under url/items/ will be seen as this.state.items => {}
-    // whenever this changes, it will cause re-render
+    fb = new Firebase(rootUrl + 'items/');
+    this.bindAsObject(fb, 'items');
+    // if we get value from firebase, we call handleDataLoaded
+    fb.on('value', this.handleDataLoaded);
   },
   render: function() {
     console.log(this.state);
@@ -30,9 +31,14 @@ var App = React.createClass({
           To-Do list
         </h2>
         <Header itemStore={this.firebaseRefs.items}/>
-        <List items={this.state.items} />
+        <div className={"content " + (this.state.loaded?'loaded':'')}>
+          <List items={this.state.items} />
+        </div>
       </div>
     </div>
+  },
+  handleDataLoaded: function() {
+    this.setState({loaded:true});
   }
 });
 
